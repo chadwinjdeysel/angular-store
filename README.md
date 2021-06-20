@@ -12,31 +12,31 @@ Open solution in terminal of your choice
 
 ## Backend
 
-From the route folder, cd into the api folder
+* rom the route folder, cd into the api folder
 ```
 cd store.api
 ```
 
-restore nuget packages
+* Restore nuget packages
 
-run the program
+* Run the program
 ```
 dotnet run
 ```
 
 ## Frontend
 
-From the route folder, cd into the spa folder
+* From the route folder, cd into the spa folder
 ```
 cd store-spa
 ```
 
-Install node packages
+* Install node packages
 ```
 npm install
 ```
 
-Run the Angular application
+* Run the Angular application
 ```
 ng serve
 ```
