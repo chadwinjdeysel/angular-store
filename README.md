@@ -5,7 +5,7 @@ Ecommerce app with admin panel built with .Net Core 3.1 and Angular.
 
 Clone the repo to your machine
 ```
-$ git clone https://github.com/chadwinjdeysel/angular-store
+$ git clone https://github.com/chadwinjdeysel/angular-store.git
 ```
 
 Open solution in terminal of your choice 
