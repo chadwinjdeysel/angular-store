@@ -1,0 +1,35 @@
+<div class="container product-container">
+    <div class="container button-container">
+        <button
+            class="btn btn-outline-primary"
+            (click)="getProducts()"
+        >   
+            All Categories
+        </button>
+        
+        <app-category-button
+            *ngFor="let category of categories"
+            [category]="category"
+            (toggleCategory)="getProducts(category.value)"
+        >
+                
+        </app-category-button>
+    </div>
+
+    <div class="row">
+
+        <app-product-card
+            *ngFor="let product of products"
+            [product]="product"
+            (addToCartEvent)="addToCart(product)"
+            class="col-3 p-3"
+        >
+
+        </app-product-card>
+    </div>
+
+    
+</div>
+
+
+

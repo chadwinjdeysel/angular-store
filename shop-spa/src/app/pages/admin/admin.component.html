@@ -1,0 +1,32 @@
+<div class="container">
+    <h1 class="my-3">Admin</h1>
+    <div class="row">
+        <div class="col-4">
+            <a
+                [routerLink]="['/admin/orders']"
+            >
+                <div class="card">
+                    <div class="card-body">
+                        <h3>View Orders</h3>
+
+                        <p>View orders that users has placed</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-4">
+            <a
+                [routerLink]="['/admin/products']"
+            >
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Manage Products</h3>
+
+                        <p>Create, Update and Delete products</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

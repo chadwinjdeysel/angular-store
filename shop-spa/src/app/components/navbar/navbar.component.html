@@ -1,0 +1,51 @@
+<div class="navbar navbar-expand-md">
+    <div class="container">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link"
+                    [routerLink]="['/']"    
+                >
+                    Products
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                    [routerLink]="['/cart']"    
+                >
+                    Cart
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                    [routerLink]="['/admin']"
+                    *ngIf="isAdmin"
+                >
+                    Admin
+                </a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <button 
+                class="btn btn-danger" 
+                (click)="logout()"
+                *ngIf="isAuthenticated">
+                    Log out
+                </button>
+            </li>
+
+            <li class="nav-item">
+                <a 
+                    class="btn btn-primary"
+                    [routerLink]="['/login']"
+                    *ngIf="!isAuthenticated"
+                >
+                    Log in
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

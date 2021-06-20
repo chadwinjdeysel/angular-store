@@ -1,0 +1,107 @@
+<div class="container">
+    <form 
+        [formGroup]="productForm"
+        (ngSubmit)="updateProduct()"
+        class="row my-4"
+    >   
+    <input 
+        type="hidden"
+        id="id"
+        formControlName="id"
+    />
+        
+        <div class="col-3">
+            <div class="form-group">
+                <label>Name</label>
+                <input 
+                    type="text"
+                    class="form-control"
+                    placeholder="Name"
+                    id="name"
+                    formControlName="name"
+                />
+            </div>
+        </div>
+        
+        <div class="col-3">
+            <div class="form-group">
+                <label>Price</label>
+                <input 
+                    type="text"
+                    class="form-control"
+                    placeholder="Price"
+                    id="price"
+                    formControlName="price"
+                />
+            </div>
+        </div>
+        
+        <div class="col-3">
+            <div class="form-group">
+                <label>Category</label>
+                <select
+                    class="form-control"
+                    name="categoryValue"
+                    formControlName="category"
+                    id="category"
+                >   
+                    <option value="0">Casual</option>
+                    <option value="1">Accessories</option>
+                    <option value="2">Active</option>
+                    <option value="3">Formal</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-3 align-self-end">
+            <button 
+                class="btn btn-primary"
+                type="submit"
+                *ngIf="!isEditing"
+            >
+                Create
+            </button>
+
+            <button 
+                class="btn btn-primary"
+                type="submit"
+                *ngIf="isEditing"
+            >
+                Update
+            </button>
+        </div>
+        
+    </form>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{ product.name }}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.category}}</td>
+                <td>
+                    <button 
+                        class="btn btn-info mx-3"
+                        (click)="editProduct(product)"
+                        >
+                        Edit
+                    </button>
+                    <button 
+                        class="btn btn-danger"
+                        (click)="delete(product)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

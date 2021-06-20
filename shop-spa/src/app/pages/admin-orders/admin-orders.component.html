@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table table-borderless table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>User Name</th>
+                <th>Date</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{order.user.userName}}</td>
+                <td>{{order.orderPlaced}}</td>
+                <td>{{order.orderTotal}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,15 @@
+
+<div class="card">
+    <div class="card-body">
+        <h3>{{product.name}}</h3>
+
+        <h2>R {{product.price}}</h2>
+
+        <p>{{product.category}}</p>
+
+        <button 
+            class="btn btn-primary btn-block"
+            (click)="addToCartClick()"
+        >Add to Cart</button>
+    </div>
+</div>

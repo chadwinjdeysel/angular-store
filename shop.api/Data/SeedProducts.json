@@ -1,0 +1,52 @@
+[
+    {
+        "Name": "T-Shirt",
+        "Price": "200",
+        "Category": "0"
+    },
+    {
+        "Name": "Denim Jeans",
+        "Price": "750",
+        "Category": "0"
+    },
+    {
+        "Name": "Belt",
+        "Price": "300",
+        "Category": "1"
+    },
+    {
+        "Name": "Socks",
+        "Price": "150",
+        "Category": "1"
+    },
+    {
+        "Name": "White Leather Sneakers",
+        "Price": "1200",
+        "Category": "1"
+    },
+    {
+        "Name": "Grey Sweat Pants",
+        "Price": "300",
+        "Category": "2"
+    },
+    {
+        "Name": "Orange Hoodie",
+        "Price": "400",
+        "Category": "2"
+    },
+    {
+        "Name": "Suit Shirt",
+        "Price": "450",
+        "Category": "3"
+    },
+    {
+        "Name": "Suit Jacket",
+        "Price": "2000",
+        "Category": "3"
+    },
+    {
+        "Name": "Suit Pants",
+        "Price": "900",
+        "Category": "3"
+    }
+]
